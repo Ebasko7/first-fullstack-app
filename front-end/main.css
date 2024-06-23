@@ -1,1 +1,42 @@
-/* all CSS goes here */
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* Make the navbar horizontal */
+#navbar {
+  display: flex;
+  justify-content: right;
+  background-color: #333; /* Background color of the navbar */
+  padding: 10px; /* Padding around the navbar */
+}
+
+/* Style the list items */
+#navbar li {
+  margin-right: 20px; /* Space between items */
+}
+
+#navbar li a {
+  color: white; /* Text color */
+  text-decoration: none; /* Remove underline */
+  padding: 10px; /* Padding around the links */
+  display: block; /* Make the link fill the list item */
+}
+
+/* Add hover effect */
+#navbar li a:hover {
+  background-color: #111; /* Background color on hover */
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+}
+
+.background {
+    display: flex;
+    justify-content: center;
+}
+

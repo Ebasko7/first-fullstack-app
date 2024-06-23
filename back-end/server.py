@@ -1,13 +1,25 @@
-# start a flask app with Cross Origin Resource Sharing capabilities
+from flask import Flask, jsonify
+from model import subjects, instructors, db
+from flask_cors import CORS
 
-# connect flask app to PostgreSQL
+app = Flask('server')
+CORS(app)
 
-# create Subject Model
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql+psycopg://ericbaskovich:@localhost:5432/landing_page'
 
-# create Instructor Model
+db.init_app(app)
 
-# create an endpoint for 'api/v1/subjects/' that returns all subjects sorted by difficulty level 1-4
+@app.route('/api/v1/subjects/')
+def get_subjects():
+    subject_data = [sub.to_dict() for sub in subjects.query.all()]
+    subject_data.sort(key= lambda x: x['difficulty_level'])
+    return jsonify(subject_data)
 
-# create an endpoint for 'api/v1/instructors/' that returns all instructors sorted from oldest to youngest
+@app.route('/api/v1/instructors/')
+def get_instructors():
+    instructor_data = [inst.to_dict() for inst in instructors.query.all()]
+    instructor_data.sort(key=lambda x: x['age'])
+    return jsonify(instructor_data)
 
-# run your server
+
+app.run(debug= True, port=8000)
