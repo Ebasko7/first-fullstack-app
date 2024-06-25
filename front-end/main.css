@@ -7,7 +7,7 @@ ul {
 #navbar {
   display: flex;
   justify-content: right;
-  background-color: #333; 
+  background-color: teal; 
   padding: 10px;
 }
 
@@ -35,5 +35,10 @@ h1{
 .background {
     display: flex;
     justify-content: center;
+    height: 100
+}
+
+body {
+  background-color: purple;
 }
 

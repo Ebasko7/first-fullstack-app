@@ -7,8 +7,8 @@
 }
 
 .subject-card {
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
+  background-color: orange;
+  border: 1px solid white;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   width: 300px;
@@ -18,7 +18,7 @@
 }
 
 .subject-card:hover {
-  background-color: #e0e0e0; 
+  background-color: teal;
   border-color: #ccc; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
@@ -42,7 +42,7 @@ ul {
 #navbar {
   display: flex;
   justify-content: right;
-  background-color: #333;
+  background-color: teal;
   padding: 10px;
 }
 
@@ -59,4 +59,8 @@ ul {
 
 #navbar li a:hover {
   background-color: #111;
+}
+
+body {
+  background-color: purple;
 }
