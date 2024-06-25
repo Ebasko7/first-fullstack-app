@@ -4,30 +4,27 @@ ul {
   margin: 0;
   list-style: none;
 }
-
-/* Make the navbar horizontal */
 #navbar {
   display: flex;
   justify-content: right;
-  background-color: #333; /* Background color of the navbar */
-  padding: 10px; /* Padding around the navbar */
+  background-color: #333; 
+  padding: 10px;
 }
 
-/* Style the list items */
+
 #navbar li {
-  margin-right: 20px; /* Space between items */
+  margin-right: 20px; 
 }
 
 #navbar li a {
-  color: white; /* Text color */
-  text-decoration: none; /* Remove underline */
-  padding: 10px; /* Padding around the links */
-  display: block; /* Make the link fill the list item */
+  color: white;
+  text-decoration: none; 
+  padding: 10px;
+  display: block;
 }
 
-/* Add hover effect */
 #navbar li a:hover {
-  background-color: #111; /* Background color on hover */
+  background-color: #111; 
 }
 
 h1{
